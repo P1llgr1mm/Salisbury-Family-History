@@ -43,7 +43,7 @@ public class Main {
 		ggGenerator.generateGGrampaGlory(); // generate glory again
 		ggrampaGlory = ggGenerator.getGlory();
 		ggrampaGloryBonus = ggGenerator.getGloryBonus();
-		grampaGlory = gGenerator.getGlory() +ggrampaGloryBonus;
+		grampaGlory = gGenerator.getGlory() + ggrampaGloryBonus;
 		// print out the result
 		show("GGrampa glory is " + ggrampaGlory + ".");
 		show("Grampa glory is " + grampaGlory + ".");
