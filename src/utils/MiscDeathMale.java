@@ -10,6 +10,7 @@ public class MiscDeathMale {
 	public MiscDeathMale() {
 		generateMiscDeathMale();
 		new PrintUtils().print(CauseOfDeath);
+		return CauseOfDeath;
 	}
 
 	private void generateMiscDeathMale() {

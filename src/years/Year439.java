@@ -2,6 +2,7 @@ package years;
 
 import utils.PrintUtils;
 import utils.Roller;
+import utils.MiscDeathMale;
 
 public class Year439 {
 	int EventRoll;
@@ -17,8 +18,12 @@ public class Year439 {
 
 	private void generate439event() {
 		EventRoll = new Roller().roll(20, 0);
-		if (EventRoll = 1) {
-			YearEvent = ("You rolled a 1 = Died (see “Miscellaneous Causes of Death” sidebar).");
+		if (EventRoll == 1) {
+			YearEvent = ("Miscellaneous Death! => " + CauseOfDeath);
+		} else if (EventRoll < 7) {
+			YearEvent = ("Nothing signifi cant occurred.");
+		} else { YearEvent = ("Fought at the Battle of Carlion.");
+		GetBattleResult();
 		}
 
 	}
